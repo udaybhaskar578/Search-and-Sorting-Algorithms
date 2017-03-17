@@ -16,7 +16,6 @@ def swap(intarray,i,imin):
 
 n =  input().strip().split(' ')
 intarray = array('i',list(map(int,n)))
-x = 0
 for i in range(len(intarray)-1):
     iMin = i
     for j in range(i+1,len(intarray)):

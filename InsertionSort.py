@@ -3,6 +3,8 @@
 Author: Sai Uday Bhaskar Mudivarthy
 Program: Insertion Sort
 Time Complexity: O(n*n)
+Best Case: O(n)
+Worst Case, Average Case: O(n*n)
 '''
 import sys
 from array import *
@@ -12,15 +14,15 @@ n =  input().strip().split(' ')
 intarray = array('i',list(map(int,n)))
 isMoved = False
 print()
-print("Insertion Sort works this way with every itteration")
+print("Insertion Sort works this way with every itteration by making two subsets Sorted and Unsorted")
 for i in range(1,len(intarray)):
     x=intarray[i]
     j= i-1
     print()
-    print("Sorted Array",end=": ")
+    print("Sorted Subset",end=": ")
     for k in range(i):
         print(intarray[k],end=" ")
-    print(end="& Unsorted Array: ")
+    print(end="& Unsorted Subset: ")
     for k in range(i,len(intarray)):
         print(intarray[k],end=" ")
     print()

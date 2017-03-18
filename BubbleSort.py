@@ -18,9 +18,10 @@ def swap(intarray,i,imin):
 
 n =  input().strip().split(' ')
 intarray = array('i',list(map(int,n)))
+print()
 for i in range(1,len(intarray)):
     isSwapped = False
-    print("Iteration: " + str(i))
+    print("Iteration " + str(i)+" Result: ")
     for j in range(len(intarray)-1):
         if intarray[j] > intarray[j+1]:
             isSwapped = True
@@ -30,8 +31,10 @@ for i in range(1,len(intarray)):
     print()
     if not isSwapped:
         break
-
+print()
+print("Final Result",end=": ")
 for i in intarray:
-    print(i,end=",")
+    print(i,end=" ")
+print()
     
 

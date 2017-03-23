@@ -1,7 +1,7 @@
 #!/bin/python3
 '''
-Author: Sai Uday Bhaskar Mudivarthy
-Program: Binary Search Iterative
+Author: Sai Uday Bhaskar Mudivarty
+Program: Binary Search Recursive
 Time Complexity: O(Log n)
 '''
 def BinarySearch(A,start,end,x):
